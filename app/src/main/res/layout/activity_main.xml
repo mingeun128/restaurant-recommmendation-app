@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main_layout">
+    <ImageView
+        android:id="@+id/red_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:visibility="invisible"></ImageView>
+    <ImageView
+        android:id="@+id/green_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green"
+        android:visibility="invisible"></ImageView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bad_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#ffffff"
+        app:elevation="20dp"
+        app:pressedTranslationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="80dp"
+        android:src="@drawable/bad_icon"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/good_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#ffffff"
+        app:elevation="20dp"
+        app:pressedTranslationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="80dp"
+        android:src="@drawable/good_icon"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
